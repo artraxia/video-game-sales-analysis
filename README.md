@@ -1,4 +1,4 @@
-# TripleTen · Projeto Integrado — Análise do Mercado de Games
+# Video Game Sales Analysis — EDA & Hypothesis Testing (Python)
 
 Projeto do programa **Data Scientist** da TripleTen (aprovado pelo revisor).
 Análise exploratória de um histórico de vendas de videogames (`games.csv`, ~16,7 mil títulos até 2016)
