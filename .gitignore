@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+*.csv
+!data/.gitkeep
+lines.txt
+samsung_items.json
