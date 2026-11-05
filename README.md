@@ -1,5 +1,7 @@
 # Video Game Sales Analysis — EDA & Hypothesis Testing (Python)
 
+![Python](https://img.shields.io/badge/python-3.10%2B-blue) ![pandas](https://img.shields.io/badge/pandas-150458?logo=pandas&logoColor=white) ![License: MIT](https://img.shields.io/badge/license-MIT-green)
+
 Projeto do programa **Data Scientist** da TripleTen (aprovado pelo revisor).
 Análise exploratória de um histórico de vendas de videogames (`games.csv`, ~16,7 mil títulos até 2016)
 para orientar a campanha de 2017 de uma loja online fictícia.
@@ -30,12 +32,28 @@ e o comportamento do consumidor difere entre América do Norte, Europa e Japão?
 ## Estrutura
 
 ```
-notebook/games_eda.ipynb   # análise completa, com saídas e gráficos
-data/                      # games.csv (não versionado; ver abaixo)
+notebook/games_eda.ipynb   # análise completa, com saídas e gráficos (abre renderizado no GitHub)
+data/games.csv             # dataset (não versionado; ver abaixo)
+requirements.txt
 ```
 
-O dataset é fornecido pela plataforma da TripleTen e não está incluído no repositório. Para reexecutar,
-salve `games.csv` em `data/` e rode o notebook a partir da pasta `notebook/`.
+## Como reproduzir
+
+O `games.csv` usado no curso é uma versão do dataset público **Video Game Sales with Ratings** (Kaggle),
+com as mesmas colunas (`Name, Platform, Year_of_Release, Genre, NA_sales, EU_sales, JP_sales, Other_sales,
+Critic_Score, User_Score, Rating`).
+
+```bash
+git clone https://github.com/artraxia/video-game-sales-analysis.git
+cd video-game-sales-analysis
+pip install -r requirements.txt
+# baixe o CSV do Kaggle e salve como data/games.csv
+#   https://www.kaggle.com/datasets/rush4ratio/video-game-sales-with-ratings
+jupyter notebook notebook/games_eda.ipynb
+```
+
+O notebook lê `../data/games.csv` e roda de ponta a ponta (Kernel → Restart & Run All). Pequenas diferenças
+numéricas em relação às saídas salvas podem ocorrer se a versão do Kaggle tiver linhas a mais ou a menos.
 
 ## Stack
 
